@@ -1,0 +1,41 @@
+
+title: h1zzz Note's
+email: 24761228+h1zzz@users.noreply.github.com
+author: h1zzz
+
+copyright: 'Copyright (c) {currentYear} <a href="https://github.com/h1zzz">{author}</a>'
+
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+baseurl: ""
+url: "https://h1zzz.net"
+favicon: ""
+
+remote_theme: "jeffreytse/jekyll-theme-yat"
+
+header_pages:
+  - index.md
+  - archives.md
+  - categories.md
+  - tags.md
+  - about.md
+
+yat:
+  date_format: "%b %d, %Y"
+
+night_mode: "manual"
+sitemap: true
+
+markdown: kramdown
+kmarkdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship
