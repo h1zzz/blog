@@ -2,8 +2,8 @@
 layout: post
 title:  "OpenSSL common commands"
 date:   2021-11-18 14:09:00 +0800
-categories: Notes
-tags: OpenSSL
+categories: notes
+tags: openssl
 ---
 
 ## Use with compression
